@@ -54,7 +54,7 @@ function getLocationInfo(response) {
   renderData(weatherDetails);
 }
 function getTemperature(lon, lat, city) {
-  const apiKey = 'cf25d8eb42806c8d7039bbac5d23b349';
+  const apiKey = '';
   const unit = 'metric';
   if (city === '') {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`;
