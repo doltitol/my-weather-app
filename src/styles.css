@@ -43,6 +43,8 @@ form {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .main {
   width: 60vw;
@@ -141,6 +143,11 @@ form {
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+}
+.footer-link{
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
 }
 #search {
   width: 90%;
