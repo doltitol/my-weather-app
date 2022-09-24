@@ -38,7 +38,7 @@ form {
   border-radius: 10px;
   padding: 2px;
   height: 43px;
-  width: 60%;
+  width: 100%;
 }
 .container {
   display: flex;
@@ -71,9 +71,8 @@ form {
   cursor: pointer;
   color: rgb(55, 154, 224);
 }
-.icon-current {
-  font-size: 130px;
-  color: rgb(55, 154, 224);
+#icon-current {
+  width: 150px;
 }
 .main .weather {
   margin-top: 20px;
@@ -114,6 +113,7 @@ form {
 .header-text {
   font-weight: 600;
   font-size: 18px;
+  margin-right: 5px;
 }
 .next-day {
   background: linear-gradient(
@@ -150,7 +150,7 @@ form {
   text-align: center;
 }
 #search {
-  width: 90%;
+  width: 100%;
   border: none;
   height: 35px;
   padding: 5px 10px;
@@ -171,4 +171,7 @@ h1 #temp-type a.active {
   text-decoration: none;
   cursor: pointer;
   color: #070f4e;
+}
+#weather-desc::first-letter{
+  text-transform: capitalize;
 }

@@ -40,16 +40,14 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-          <button class="btn loc">Current Location</button>
         </div>
           <div class="card weather">
             <div class="card-head">
-              <div class="d-flex justify-content-between">
-                <p class="header-text" id='day-of-the-week'>
-                  Monday
-                </p>
-                <p class="header-text" id='time'>
-                  19:00
+              <div class="d-block">
+                <p class="header-text">
+                  Last updated on
+                  <span id="day">Monday</span> 
+                  <span id='time'>19:00</span>
                 </p>
               </div>
             </div>
@@ -57,29 +55,27 @@
               <div class="row">
                 <div class="col-md-12 col-lg-8 col-sm-12">
                   <div>
-                    <h2 id='city'>Lagos, <strong>Nigeria</strong></h2>
+                    <h2><span id='city'></span>, <strong><span id="country"></span></strong></h2>
                   </div>
                   <div class="row">
                     <div class="col-md-6 col-sm-12">
-                      <!-- <h1><span id='temperature'>23</span><span id='temp-type'>
-                        <a href='#' id='celsius' class="active">°C</a> | <a href='#' id='farenheit'>°F</a><span></h1> -->
-                          <h1><span id='temperature'>23</span><span id='temp-type'>
-                              <a href='#' id='celsius' class="active">°C</a><span></h1>
+                      <h1><span id='temperature'></span><span id='temp-type'>
+                        <a href='#' id='celsius' class="active">°C</a> | <a href='#' id='fahrenheit'>°F</a><span></h1>
                     </div>
                     <div class="col-md-6 weather-details col-sm-12">
-                      <p><strong>Pressure:</strong><span id="pressure"> 15%<span></p>
-                      <p><strong>Humidity:</strong> <span id="humidity"> 99%</span></p>
-                      <p><strong>Wind:</strong> <span id="wind">3Km/h</span></p>
+                      <p><strong>Pressure:</strong><span id="pressure"> <span></p>
+                      <p><strong>Humidity:</strong> <span id="humidity"> </span></p>
+                      <p><strong>Wind:</strong> <span id="wind"></span></p>
                     </div>
                     <div>
-                      <h4 id="weather-desc">Partly Cloudy</h4>
+                      <h4 id="weather-desc"></h4>
                     </div>
                   </div>
                 </div>
                 <div
                   class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center"
                 >
-                  <i class="fa-solid fa-cloud icon-current"></i>
+                  <img src="" alt="Clear" id="icon-current" class="float-left" />
                 </div>
               </div>
             </div>
@@ -139,6 +135,6 @@
       <p class="footer-link"><a href="https://github.com/doltitol/my-weather-app" target="_blank">Open-source code</a> by Oludolapo Adegoroye</p>
     </div>
     <script src="config.js"></script>
-    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
