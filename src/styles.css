@@ -150,12 +150,15 @@ form {
   text-align: center;
 }
 #search {
-  width: 100%;
+  width: 97%;
   border: none;
   height: 35px;
   padding: 5px 10px;
   outline: none;
   font-size: 16px;
+}
+#search:focus{
+background-color: transparent;
 }
 h1 #temp-type {
   font-size: 16px;
